@@ -116,7 +116,8 @@ namespace WpfZAD2
             saveFileDialog.Filter = "CSV (*.csv)|*.csv";
 
             saveFileDialog.ShowDialog();
-            filePath = saveFileDialog.FileName;
+            if (saveFileDialog.FileName == "") return;
+            filePath = saveFileDialog.FileName;           
             SaveToFile();                                   
         }
 
