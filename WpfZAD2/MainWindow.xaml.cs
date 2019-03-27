@@ -50,7 +50,7 @@ namespace WpfZAD2
                 builder.Append(";");
                 builder.Append(employee.Sex);
                 builder.Append(";");
-                builder.Append(employee.BirthDate.ToShortDateString());
+                builder.Append(employee.BirthDate.ToString("dd'.'MM'.'yyyy"));
                 builder.Append(";");
                 builder.Append(employee.BirthCountry);
                 builder.Append(";");
